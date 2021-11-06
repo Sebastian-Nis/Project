@@ -7,6 +7,7 @@ export function Auth() {
   const [values, setValues] = useState({
     email: '',
     password: '',
+    type:'user',
     'retype-password': '',
   });
 
@@ -22,6 +23,8 @@ export function Auth() {
 
   const history = useHistory();
   const location = useLocation();
+
+  
 
   if (auth) {
     history.push('/');
@@ -64,6 +67,7 @@ export function Auth() {
         body: JSON.stringify({
           email: values.email,
           password: values.password,
+          type:values.type
         }),
       }
     ).then((res) => res.json());
@@ -104,6 +108,7 @@ export function Auth() {
     return isValid;
   }
 
+  
   return (
     <form onSubmit={handleSubmit} noValidate={true}>
       <h1>{isLogin ? 'Login' : 'Register'}</h1>

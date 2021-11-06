@@ -1,0 +1,18 @@
+{
+      "id":1,
+      "email":"a@g.com",
+      "password":"password11",
+      "account_type":"standard"
+    },
+    {
+      "id":2,
+      "email":"b@g.com",
+      "password":"password12",
+      "account_type":"founder"
+    },
+    {
+      "id":3,
+      "email":"c@g.com",
+      "password":"password13",
+      "account_type":"veteran"
+    }

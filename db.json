@@ -1,54 +1,95 @@
 {
-  "players":[
+  "users": [
     {
-      "id":1,
-      "email":"a@g.com",
-      "password":"password11",
-      "account_type":"standard"
+      "email": "a@a.com",
+      "password": "$2a$10$E1hq6juoEvlQq7Pu.rOikuLbcD/psEM8K/InxwBw2l2k8Z9izSQuS",
+      "id": 1,
+      "type": "admin"
     },
     {
-      "id":2,
-      "email":"b@g.com",
-      "password":"password12",
-      "account_type":"founder"
+      "email": "u@a.com",
+      "password": "$2a$10$XLpRSft4I0Z1b/hHj8eYZuvfvQB06YRQeyv7j9/.7P8DLJ2StnrEu",
+      "id": 2,
+      "type": "user"
     },
     {
-      "id":3,
-      "email":"c@g.com",
-      "password":"password13",
-      "account_type":"veteran"
+      "email": "vip@a.com",
+      "password": "$2a$10$NDKb7G.55.fOfJnsIP2ae.0bIt6jJpuq1MtwvqYnTZHY.UrqzUiWO",
+      "id": 3,
+      "type": "vip"
+    },
+    {
+      "email": "t@a.com",
+      "password": "$2a$10$NC8OcPN1PWePUDIUob5DcuTGXP4D37k7xRbw3akgMd6BweHo2ODeK",
+      "type": "user",
+      "id": 4
     }
   ],
-  "staff":[
+  "users_details": [
     {
-      "id":1,
-      "email":"h@g.com",
-      "password":"password111",
-      "security_access":false,
-      "role":"Game Master"
+      "userId": 1,
+      "nickname": "Buzz",
+      "level": 23,
+      "location": "planet3",
+      "guns": [
+        "P320",
+        "Ruger MK.III"
+      ]
     },
     {
-      "id":2,
-      "email":"e@g.com",
-      "password":"password112",
-      "security_access":true,
-      "role":"Admin"
+      "userId": 2,
+      "nickname": "user normal",
+      "level": 52,
+      "location": "planet vip",
+      "guns": [
+        "P320",
+        ""
+      ]
+    },
+    {
+      "userId": 3,
+      "nickname": "Vip nick",
+      "level": 52,
+      "location": "planet vip",
+      "guns": [
+        "P320",
+        ""
+      ]
+    },
+    {
+      "userId": 4,
+      "nickname": "user normal",
+      "level": 52,
+      "location": "planet1",
+      "guns": [
+        "P320",
+        ""
+      ]
     }
   ],
-  "guns":[
+  "guns": [
     {
-      "id":"1",
-      "name":"P320",
-      "type":"pistol",
-      "caliber":"9mm",
-      "image":"https://i.imgur.com/mB6Xvld.png"
+      "id": "1",
+      "name": "P320",
+      "type": "pistol",
+      "caliber": "9mm",
+      "image": "https://i.imgur.com/mB6Xvld.png"
     },
     {
-      "id":"2",
-      "name":"Ruger MK.III",
-      "type":"pistol",
-      "caliber":"9mm",
-      "image":"https://i.imgur.com/mUvp6HZ.png"
+      "id": "2",
+      "name": "Ruger MK.III",
+      "type": "pistol",
+      "caliber": "9mm",
+      "image": "https://i.imgur.com/mUvp6HZ.png"
+    }
+  ],
+  "gunidea": [
+    {
+      "id": "1",
+      "name": "ff0",
+      "type": "pistol",
+      "caliber": ".45ACP",
+      "image": "https://i.imgur.com/mB6Xvld.png"
     }
   ]
 }

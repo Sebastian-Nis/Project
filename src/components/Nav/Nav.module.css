@@ -1,0 +1,37 @@
+.main-menu {
+  display: flex;
+  gap: 0.5rem;
+  list-style: none;
+  flex-grow: 1;
+
+  margin: 0;
+}
+
+.main-menu a {
+  text-decoration: none;
+}
+
+.main-menu a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.active {
+  background-color: var(--primary-color);
+}
+
+.push-right {
+  margin-left: auto;
+}
