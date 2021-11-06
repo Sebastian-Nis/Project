@@ -14,81 +14,90 @@ export function Nav() {
   }
 
   return (
-      <nav className="navbar">
-          <Link to="/">
+//       <nav className="navbar">
+//           <Link to="/">
+//               HomePage
+//           </Link>
+//           <Link to="/profile">
+//               Profile
+//           </Link>
+//           <Link to="/planner">
+//               Character Builder
+//           </Link>
+//           {!auth?.user && (
+//             <>
+//               <li className={styles['push-right']}>
+//                 <NavLink to="/login" >
+//                   Login
+//                 </NavLink>
+//               </li>
+//               <li>
+//                 <NavLink to="/register" >
+//                   Register
+//                 </NavLink>
+//               </li>
+//             </>
+// //         )}
+//       </nav>
+      <nav>
+        <Link to="/" >
+          My Awesome Site
+        </Link>
+        <ul >
+          <li>
+            <NavLink exact to="/" >
               HomePage
-          </Link>
-          <Link to="/profile">
-              Profile
-          </Link>
-          <span className="navauth">
-            <Link to="/login">
-                Login
-            </Link>
-            <Link to="/register">
-                Register
-            </Link>
-          </span>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/planner" >
+              Character builder
+            </NavLink>
+          </li>
+
+          {/* <li>
+            <NavLink to="/albums" >
+              Albums
+            </NavLink>
+          </li> */}
+
+          {!auth?.user && (
+            <>
+              <li >
+                <NavLink to="/login" >
+                  Login
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="/register" >
+                  Register
+                </NavLink>
+              </li>
+            </>
+          )}
+
+          {auth?.user && (
+            <>
+              <li>
+                <NavLink to="/profile" >
+                  My profile
+                </NavLink>
+              </li>
+
+              <li >
+                Welcome,{' '}
+                <NavLink to="/profile" >
+                  {auth.user.email}
+                </NavLink>
+              </li>
+              <li>
+                <a href="/" onClick={handleLogout}>
+                  Logout
+                </a>
+              </li>
+            </>
+          )}
+        </ul>
       </nav>
-//     <nav className={styles.nav}>
-//       <Link to="/" className={styles.logo}>
-//         My Awesome Site
-//       </Link>
-//       <ul className={styles['main-menu']}>
-//         <li>
-//           <NavLink exact to="/" activeClassName={styles.active}>
-//             Home
-//           </NavLink>
-//         </li>
-//         <li>
-//           <NavLink to="/communication" activeClassName={styles.active}>
-//             Communication
-//           </NavLink>
-//         </li>
-
-//         <li>
-//           <NavLink to="/albums" activeClassName={styles.active}>
-//             Albums
-//           </NavLink>
-//         </li>
-
-//         {!auth?.user && (
-//           <>
-//             <li className={styles['push-right']}>
-//               <NavLink to="/login" activeClassName={styles.active}>
-//                 Login
-//               </NavLink>
-//             </li>
-//             <li>
-//               <NavLink to="/register" activeClassName={styles.active}>
-//                 Register
-//               </NavLink>
-//             </li>
-//           </>
-//         )}
-
-//         {auth?.user && (
-//           <>
-//             <li>
-//               <NavLink to="/todos" activeClassName={styles.active}>
-//                 Todos
-//               </NavLink>
-//             </li>
-
-//             <li className={styles['push-right']}>
-//               Welcome,{' '}
-//               <NavLink to="/profile" activeClassName={styles.active}>
-//                 {auth.user.email}
-//               </NavLink>
-//             </li>
-//             <li>
-//               <a href="/" onClick={handleLogout}>
-//                 Logout
-//               </a>
-//             </li>
-//           </>
-//         )}
-//       </ul>
-//     </nav>
   );
 }

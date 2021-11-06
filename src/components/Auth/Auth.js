@@ -54,11 +54,12 @@ export function Auth() {
     }
 
     const data = await fetch(
-      `http://localhost:3000/${isLogin ? 'login' : 'register'}`,
+      `http://localhost:3001/${isLogin ? 'login' : 'register'}`,
       {
         method: 'POST',
         headers: {
-          'Content-type': 'application/json',
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
         },
         body: JSON.stringify({
           email: values.email,
