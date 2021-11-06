@@ -1,38 +1,54 @@
 {
-    "players": [
-      {
-        "id": 1,
-        "email": "a@g.com",
-        "password": "password11",
-        "account_type": "standard"
-      },
-      {
-        "id": 2,
-        "email": "b@g.com",
-        "password": "password12",
-        "account_type": "founder"
-      },
-      {
-        "id": 3,
-        "email": "c@g.com",
-        "password": "password13",
-        "account_type": "veteran"
-      }
-    ],
-    "staff": [
-      {
-        "id": 1,
-        "email": "h@g.com",
-        "password": "password111",
-        "security_access": false,
-        "role": "Game Master"
-      },
-      {
-        "id": 2,
-        "email": "e@g.com",
-        "password": "password112",
-        "security_access": true,
-        "role": "Admin"
-      }
-    ]
-  }
+  "players":[
+    {
+      "id":1,
+      "email":"a@g.com",
+      "password":"password11",
+      "account_type":"standard"
+    },
+    {
+      "id":2,
+      "email":"b@g.com",
+      "password":"password12",
+      "account_type":"founder"
+    },
+    {
+      "id":3,
+      "email":"c@g.com",
+      "password":"password13",
+      "account_type":"veteran"
+    }
+  ],
+  "staff":[
+    {
+      "id":1,
+      "email":"h@g.com",
+      "password":"password111",
+      "security_access":false,
+      "role":"Game Master"
+    },
+    {
+      "id":2,
+      "email":"e@g.com",
+      "password":"password112",
+      "security_access":true,
+      "role":"Admin"
+    }
+  ],
+  "guns":[
+    {
+      "id":"1",
+      "name":"P320",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"https://i.imgur.com/mB6Xvld.png"
+    },
+    {
+      "id":"2",
+      "name":"Ruger MK.III",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"https://i.imgur.com/mUvp6HZ.png"
+    }
+  ]
+}
