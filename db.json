@@ -25,42 +25,46 @@
       "id": 4
     }
   ],
-  "users_details": [
+  "usersDetails": [
     {
+      "id":1,
       "userId": 1,
       "nickname": "Buzz",
       "level": 23,
-      "location": "planet3",
+      "location": "planet c",
       "guns": [
         "P320",
         "Ruger MK.III"
       ]
     },
     {
+      "id":2,
       "userId": 2,
-      "nickname": "user normal",
+      "nickname": "perry",
       "level": 52,
-      "location": "planet vip",
+      "location": "planet d",
       "guns": [
         "P320",
         ""
       ]
     },
     {
+      "id":3,
       "userId": 3,
       "nickname": "Vip nick",
       "level": 52,
-      "location": "planet vip",
+      "location": "planet b",
       "guns": [
         "P320",
         ""
       ]
     },
     {
+      "id":4,
       "userId": 4,
-      "nickname": "user normal",
+      "nickname": "lucavaccin",
       "level": 52,
-      "location": "planet1",
+      "location": "planet a",
       "guns": [
         "P320",
         ""
@@ -81,6 +85,13 @@
       "type": "pistol",
       "caliber": "9mm",
       "image": "https://i.imgur.com/mUvp6HZ.png"
+    },
+    {
+      "id": "3",
+      "name": "M90",
+      "type": "sniper",
+      "caliber": ".59 BMG",
+      "image": "./IMG-PreProccessing/Snipers/Barrett_m90.jpg"
     }
   ],
   "gunidea": [

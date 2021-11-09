@@ -10,6 +10,7 @@ import { PrivateRoute} from './components/Auth/PrivateRoute';
 
 import './App.css';
 import { Profile } from './components/Profile/Profile';
+import { Leaderboard } from './components/Leaderboard/Leaderboard';
 
 function App() {
   return (
@@ -19,8 +20,9 @@ function App() {
           <Nav className="navbar"/>
           <Switch>
             <Route exact path="/" component={Home} />
-            <PrivateRoute exact path="/profile" component={Profile} />
+            <PrivateRoute path="/profile" component={Profile} />
             <Route path="/planner" component={Planner} />
+            <Route path="/leaderboard" component={Leaderboard} />
             <Route path="/gunDetails/:id" component={GunDetails} />
             <Route path="/login" component={Auth} />
             <Route path="/register" component={Auth} />

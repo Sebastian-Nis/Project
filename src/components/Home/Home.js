@@ -7,10 +7,10 @@ export function Home() {
     <div className="homeinfo"> 
     </div>
     <div className="leaderboardPL">
-      <h2></h2>
+      <h2>Yes</h2>
     </div>
     <div className="leaderboardGD">
-      <h2></h2>
+      <h2>No</h2>
     </div>
     <div className="eventcalendar">
 

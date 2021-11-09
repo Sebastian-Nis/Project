@@ -1,0 +1,25 @@
+leaderboard:
+	table with sort by values
+
+
+
+
+SEBI MUST DO:
+TOT CE ESTE PANA ACUMA SA ARATE BINE
+
+
+shop:
+	add price la iteme
+	add user money
+	buy functionality
+
+show user guns
+
+add ammo db:
+	add ammo dmg
+	add ammo penetration
+	add ammo fragmentation
+	weapon fire rate
+	
+damage calculator page:
+	calculate vs heavy, light, medium, no armour

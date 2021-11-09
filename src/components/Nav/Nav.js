@@ -40,11 +40,14 @@ export function Nav() {
 // //         )}
 //       </nav>
       <nav className="navbar">
-        <Link exact to="/" >
+        <Link to="/" >
           HomePage
         </Link>
         <Link to="/planner" >
           Character builder
+        </Link>
+        <Link  to="/leaderboard" >
+          Leaderboard
         </Link>
           {!auth?.user && (
             <>
