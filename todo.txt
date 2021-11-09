@@ -3,9 +3,18 @@ leaderboard:
 
 
 
-
 SEBI MUST DO:
 TOT CE ESTE PANA ACUMA SA ARATE BINE
+
+
+cerinte:
+ register with more details : first name last character delete code etc
+ delete and update/change user data/details
+ 
+!Validation profile form
+error messeges + confirmation messeges(for user)
+
+!!responsive
 
 
 shop:
@@ -20,6 +29,11 @@ add ammo db:
 	add ammo penetration
 	add ammo fragmentation
 	weapon fire rate
+
+implement pagination/search and filter for shop
+	
+ExtErNal ApI
+Different account types(normal, admin etc)
 	
 damage calculator page:
 	calculate vs heavy, light, medium, no armour
