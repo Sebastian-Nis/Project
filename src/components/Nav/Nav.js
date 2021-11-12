@@ -1,6 +1,6 @@
 import { Link, NavLink, useHistory } from 'react-router-dom';
 import { useAuth } from '../Auth/Auth.context';
-// import styles from './Nav.module.css';
+import './Nav.css';
 
 export function Nav() {
   const { auth, logout } = useAuth();
@@ -40,7 +40,9 @@ export function Nav() {
 // //         )}
 //       </nav>
       <nav className="navbar">
-        <Link to="/" >
+        <img className="rifle" src="https://images.gamebanana.com/img/ico/ModCategory/m4a1.png" alt="M4A1 icon"/>
+        <img className="ak" src="https://images.gamebanana.com/img/ico/ModCategory/55df458b63dce.png" alt="Rifles icon"/>
+        <Link to="/" className="homebtn">
           HomePage
         </Link>
         <Link to="/planner" >
@@ -50,14 +52,20 @@ export function Nav() {
           Leaderboard
         </Link>
           {!auth?.user && (
-            <>
-                <NavLink to="/login" >
-                  Login
-                </NavLink>
-                <NavLink to="/register" >
-                  Register
-                </NavLink>
-            </>
+            <div className="dropdown">
+              <div className="">
+                <li>
+                    <NavLink to="/login" >
+                      Login
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink to="/register" >
+                      Register
+                    </NavLink>
+                </li>
+              </div>
+            </div>
           )}
 
           {auth?.user && (

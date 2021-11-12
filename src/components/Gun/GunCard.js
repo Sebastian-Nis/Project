@@ -1,11 +1,17 @@
 import { Link } from 'react-router-dom';
-export function GunCard({ gunId,gunName,gunIMG}) {
+import './GunCard.css';
+export function GunCard({ gunId,gunName,gunIMG,gunType}) {
     return (
+      <div className="card">
         <Link to={`/gunDetails/${gunId}`}>
-      <div>
-          <img src={gunIMG} alt="Gun no img"></img>
-          <p>{gunName}</p>
+        <img className="cardimg" src={gunIMG} alt="Gun no img"></img>
+        <table className="info">
+          <tr>
+            <th>{gunName}</th>
+          </tr>
+          <tr>{gunType}</tr>
+        </table>
+        </Link>
       </div>
-      </Link>
     );
   }

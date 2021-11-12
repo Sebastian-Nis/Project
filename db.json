@@ -1,106 +1,667 @@
 {
-  "users": [
+  "users":[
     {
-      "email": "a@a.com",
-      "password": "$2a$10$E1hq6juoEvlQq7Pu.rOikuLbcD/psEM8K/InxwBw2l2k8Z9izSQuS",
-      "id": 1,
-      "type": "admin"
+      "email":"a@a.com",
+      "password":"$2a$10$E1hq6juoEvlQq7Pu.rOikuLbcD/psEM8K/InxwBw2l2k8Z9izSQuS",
+      "id":1,
+      "type":"admin"
     },
     {
-      "email": "u@a.com",
-      "password": "$2a$10$XLpRSft4I0Z1b/hHj8eYZuvfvQB06YRQeyv7j9/.7P8DLJ2StnrEu",
-      "id": 2,
-      "type": "user"
+      "email":"u@a.com",
+      "password":"$2a$10$XLpRSft4I0Z1b/hHj8eYZuvfvQB06YRQeyv7j9/.7P8DLJ2StnrEu",
+      "id":2,
+      "type":"user"
     },
     {
-      "email": "vip@a.com",
-      "password": "$2a$10$NDKb7G.55.fOfJnsIP2ae.0bIt6jJpuq1MtwvqYnTZHY.UrqzUiWO",
-      "id": 3,
-      "type": "vip"
+      "email":"vip@a.com",
+      "password":"$2a$10$NDKb7G.55.fOfJnsIP2ae.0bIt6jJpuq1MtwvqYnTZHY.UrqzUiWO",
+      "id":3,
+      "type":"vip"
     },
     {
-      "email": "t@a.com",
-      "password": "$2a$10$NC8OcPN1PWePUDIUob5DcuTGXP4D37k7xRbw3akgMd6BweHo2ODeK",
-      "type": "user",
-      "id": 4
+      "email":"t@a.com",
+      "password":"$2a$10$NC8OcPN1PWePUDIUob5DcuTGXP4D37k7xRbw3akgMd6BweHo2ODeK",
+      "type":"user",
+      "id":4
     }
   ],
-  "usersDetails": [
+  "usersDetails":[
     {
       "id":1,
-      "userId": 1,
-      "nickname": "Buzz",
-      "level": 23,
-      "location": "planet c",
-      "guns": [
+      "userId":1,
+      "nickname":"Buzz",
+      "level":23,
+      "location":"planet c",
+      "guns":[
         "P320",
         "Ruger MK.III"
       ]
     },
     {
       "id":2,
-      "userId": 2,
-      "nickname": "perry",
-      "level": 52,
-      "location": "planet d",
-      "guns": [
+      "userId":2,
+      "nickname":"perry",
+      "level":52,
+      "location":"planet d",
+      "guns":[
         "P320",
         ""
       ]
     },
     {
       "id":3,
-      "userId": 3,
-      "nickname": "Vip nick",
-      "level": 52,
-      "location": "planet b",
-      "guns": [
+      "userId":3,
+      "nickname":"Vip nick",
+      "level":52,
+      "location":"planet b",
+      "guns":[
         "P320",
         ""
       ]
     },
     {
       "id":4,
-      "userId": 4,
-      "nickname": "lucavaccin",
-      "level": 52,
-      "location": "planet a",
-      "guns": [
+      "userId":4,
+      "nickname":"lucavaccin",
+      "level":52,
+      "location":"planet a",
+      "guns":[
         "P320",
         ""
       ]
     }
   ],
-  "guns": [
+  "guns":[
     {
-      "id": "1",
-      "name": "P320",
-      "type": "pistol",
-      "caliber": "9mm",
-      "image": "https://i.imgur.com/mB6Xvld.png"
+      "id":"1",
+      "name":"P320",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"/Images/Pistol/P320.jpg",
+      "firerate":"semi-auto"
     },
     {
-      "id": "2",
-      "name": "Ruger MK.III",
-      "type": "pistol",
-      "caliber": "9mm",
-      "image": "https://i.imgur.com/mUvp6HZ.png"
+      "id":"2",
+      "name":"B92",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"semi-auto"
     },
     {
-      "id": "3",
-      "name": "M90",
-      "type": "sniper",
-      "caliber": ".59 BMG",
-      "image": "./IMG-PreProccessing/Snipers/Barrett_m90.jpg"
+      "id":"3",
+      "name":"Browning Hi-Power",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"4",
+      "name":"Five-seven",
+      "type":"pistol",
+      "caliber":"FN 5.7mm",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"5",
+      "name":"Glock 19",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"6",
+      "name":"Ruger MK.III",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"7",
+      "name":"M1911 Colt",
+      "type":"pistol",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"8",
+      "name":"Barracuda",
+      "type":"revolver",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"double-action"
+    },
+    {
+      "id":"9",
+      "name":"Korth Combat",
+      "type":"revolver",
+      "caliber":".357 Magnum",
+      "image":"",
+      "firerate":"double-action"
+    },
+    {
+      "id":"10",
+      "name":"BFR Magnum",
+      "type":"revolver",
+      "caliber":".500 Magnum",
+      "image":"",
+      "firerate":"single-action "
+    },
+    {
+      "id":"11",
+      "name":"Colt Anaconda",
+      "type":"revolver",
+      "caliber":".44 Magnum",
+      "image":"",
+      "firerate":"double-action"
+    },
+    {
+      "id":"12",
+      "name":"Colt Detective Special",
+      "type":"revolver",
+      "caliber":".38 Special",
+      "image":"",
+      "firerate":"double-action"
+    },
+    {
+      "id":"13",
+      "name":"S&W Mod625",
+      "type":"revolver",
+      "caliber":".45 ACP",
+      "image":"",
+      "firerate":"double-action"
+    },
+    {
+      "id":"14",
+      "name":"M4 Super 90",
+      "type":"shotgun",
+      "caliber":"12-gauge",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"15",
+      "name":"RS-200",
+      "type":"shotgun",
+      "caliber":"12-gauge",
+      "image":"",
+      "firerate":"pump-action"
+    },
+    {
+      "id":"16",
+      "name":"Saiga 12",
+      "type":"shotgun",
+      "caliber":"12-gauge",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"17",
+      "name":"Supernova",
+      "type":"shotgun",
+      "caliber":"12-gauge",
+      "image":"",
+      "firerate":"pump-action"
+    },
+    {
+      "id":"18",
+      "name":"SPAS12",
+      "type":"shotgun",
+      "caliber":"12-gauge",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"19",
+      "name":"AK-102",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"20",
+      "name":"AAC Honey Badger",
+      "type":"assault rifle",
+      "caliber":".300 Blackout",
+      "image":"https://i.imgur.com/GGylcRL.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"21",
+      "name":"AK-74",
+      "type":"assault rifle",
+      "caliber":"7.62x39mm",
+      "image":"https://i.imgur.com/8FCBcN7.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"22",
+      "name":"AK-103",
+      "type":"assault rifle",
+      "caliber":"7.62x39mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"23",
+      "name":"AS VAL",
+      "type":"assault rifle",
+      "caliber":"9x39mm",
+      "image":"https://i.imgur.com/JUELSjt.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"24",
+      "name":"M17S",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"25",
+      "name":"Mk47",
+      "type":"assault rifle",
+      "caliber":"7.62x39mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"26",
+      "name":"M4A1",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"27",
+      "name":"FAMAS",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"https://i.imgur.com/c9nNOdK.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"28",
+      "name":"SCAR-L",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"29",
+      "name":"Galil",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"https://i.imgur.com/3D1Trgv.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"30",
+      "name":"HK416",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"31",
+      "name":"HKG36",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"https://i.imgur.com/enI3YYg.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"32",
+      "name":"M16A4",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"https://i.imgur.com/lvZKu2c.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"33",
+      "name":"MDR",
+      "type":"assault rifle",
+      "caliber":"7.62x51mm NATO",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"34",
+      "name":"Ruger 10 22",
+      "type":"sporting rifle",
+      "caliber":".22 LR",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"35",
+      "name":"AUG",
+      "type":"assault rifle",
+      "caliber":"5.56x45mm NATO",
+      "image":"https://i.imgur.com/XuenaaK.jpg",
+      "firerate":"automatic"
+    },
+    {
+      "id":"36",
+      "name":"G22",
+      "type":"rifle",
+      "caliber":".22 LR",
+      "image":"https://i.imgur.com/s29VQhF.jpg",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"37",
+      "name":"WA2000",
+      "type":"sniper rifle",
+      "caliber":".308 Winchester",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"38",
+      "name":"AWM",
+      "type":"sniper rifle",
+      "caliber":".338 Lapua Magnum",
+      "image":"",
+      "firerate":"bolt action"
+    },
+    {
+      "id":"39",
+      "name":"M82",
+      "type":"sniper rifle",
+      "caliber":".50 BMG",
+      "image":"",
+      "firerate":"bolt action"
+    },
+    {
+      "id":"40",
+      "name":"Mosin Nagant",
+      "type":"sniper rifle",
+      "caliber":"7.62×54mmR",
+      "image":"",
+      "firerate":"bolt action"
+    },
+    {
+      "id":"41",
+      "name":"Remington 700",
+      "type":"sniper rifle",
+      "caliber":".308 Winchester",
+      "image":"",
+      "firerate":"bolt action"
+    },
+    {
+      "id":"42",
+      "name":"SR-25",
+      "type":"sniper rifle",
+      "caliber":"7.62x51mm NATO",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"43",
+      "name":"SSG 69",
+      "type":"sniper rifle",
+      "caliber":"7.62x51mm NATO",
+      "image":"",
+      "firerate":"bolt action"
+    },
+    {
+      "id":"44",
+      "name":"SVD Dragunov",
+      "type":"sniper rifle",
+      "caliber":"7.62x54mm R",
+      "image":"",
+      "firerate":"semi-auto"
+    },
+    {
+      "id":"45",
+      "name":"VSS",
+      "type":"sniper rifle",
+      "caliber":"9x39mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"46",
+      "name":"MP7A1",
+      "type":"submachine gun",
+      "caliber":"4.6×30mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"47",
+      "name":"MAC10",
+      "type":"submachine gun",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"48",
+      "name":"MP5",
+      "type":"submachine gun",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"49",
+      "name":"MPX",
+      "type":"submachine gun",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"50",
+      "name":"UMP",
+      "type":"submachine gun",
+      "caliber":".45 ACP",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"51",
+      "name":"Uzi",
+      "type":"submachine gun",
+      "caliber":"9mm",
+      "image":"",
+      "firerate":"automatic"
+    },
+    {
+      "id":"52",
+      "name":"Vector",
+      "type":"submachine gun",
+      "caliber":".45 ACP",
+      "image":"",
+      "firerate":"automatic"
     }
   ],
-  "gunidea": [
+  "ammo":[
     {
-      "id": "1",
-      "name": "ff0",
-      "type": "pistol",
-      "caliber": ".45ACP",
-      "image": "https://i.imgur.com/mB6Xvld.png"
+      "9mm":[
+        {
+          "id":"1",
+          "name":"RIP",
+          "pen_class":"0",
+          "frag":"100",
+          "speed":"380"
+        },
+        {
+          "id":"2",
+          "name":"AP",
+          "pen_class":"3",
+          "frag":"5",
+          "speed":"390"
+        },
+        {
+          "id":"3",
+          "name":"STLc",
+          "pen_class":"2",
+          "frag":"15",
+          "speed":"460"
+        },
+        {
+          "id":"4",
+          "name":"HLWp",
+          "pen_class":"1",
+          "frag":"10",
+          "speed":"290"
+        }
+      ],
+      "FN 5.7mm":[
+        {
+          "id":"1",
+          "name":"SS",
+          "pen_class":"1",
+          "frag":"20",
+          "speed":"300"
+        },
+        {
+          "id":"2",
+          "name":"AP FMJ",
+          "pen_class":"3",
+          "frag":"5",
+          "speed":"800"
+        },
+        {
+          "id":"3",
+          "name":"SRLdCr",
+          "pen_class":"1",
+          "frag":"50",
+          "speed":"600"
+        },
+        {
+          "id":"4",
+          "name":"SSLdCr",
+          "pen_class":"2",
+          "frag":"20",
+          "speed":"300"
+        }
+      ],
+      ".357 Magnum":[
+        {
+          "id":"1",
+          "name":"Flat SWC",
+          "pen_class":"3",
+          "frag":"5",
+          "speed":"380"
+        },
+        {
+          "id":"2",
+          "name":"JHP",
+          "pen_class":"2",
+          "frag":"17",
+          "speed":"400"
+        }
+      ],
+      ".500 Magnum":[
+        {
+          "id":"1",
+          "name":"S&W XP",
+          "pen_class":"5",
+          "frag":"10",
+          "speed":"560"
+        }
+      ],
+      ".44 Magnum":[
+        {
+          "id":"1",
+          "name":"JHP",
+          "pen_class":"4",
+          "frag":"10",
+          "speed":"360"
+        }
+      ],
+      ".38 Special":[
+        {
+          "id":"1",
+          "name":"LdCr",
+          "pen_class":"0",
+          "frag":"30",
+          "speed":"300"
+        },
+        {
+          "id":"2",
+          "name":"StCr",
+          "pen_class":"2",
+          "frag":"17",
+          "speed":"420"
+        }
+      ],
+      ".45 ACP":[
+        {
+          "id":"1",
+          "name":"AP",
+          "pen_class":"3",
+          "frag":"3",
+          "speed":"290"
+        },
+        {
+          "id":"2",
+          "name":"Hydra",
+          "pen_class":"1",
+          "frag":"50",
+          "speed":"275"
+        },
+        {
+          "id":"3",
+          "name":"FMJ",
+          "pen_class":"2",
+          "frag":"4",
+          "speed":"290"
+        }
+      ],
+      "12-gauge":[
+        {
+          "id":"1",
+          "name":"Buckshot",
+          "projectiles":"8",
+          "pen_class":"1"
+        },
+        {
+          "id":"2",
+          "name":"Dual Sabot Slug",
+          "projectiles":"2",
+          "pen_class":"2"
+        },
+        {
+          "id":"3",
+          "name":"Flechette",
+          "projectiles":"8",
+          "pen_class":"5"
+        },
+        {
+          "id":"4",
+          "name":"Slug",
+          "projectiles":"1",
+          "pen_class":"2"
+        }
+      ],
+      "":[
+        
+      ]
+    }
+  ],
+  "gunidea":[
+    {
+      "id":"1",
+      "name":"ff0",
+      "type":"pistol",
+      "caliber":".45ACP",
+      "image":"https://i.imgur.com/mB6Xvld.png"
     }
   ]
 }

@@ -1,16 +1,16 @@
-.compare {
-    display: grid;
-    grid-template-columns: 45% 45%;
-    grid-template-rows: 300px;
-    gap: 0px 0px;
-    grid-auto-flow: row;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    justify-items: center;
-    align-items: center;
-    grid-template-areas:
-      ". .";
-    width: 90%;
-    height: 40%;
-  }
+.cardlist{
   
+  display: grid; 
+  grid-template-columns: 30% 30% 30%; 
+  grid-template-rows: auto; 
+  gap: 20px 10px; 
+  grid-template-areas: 
+    ". . ."; 
+  justify-content: space-evenly; 
+  align-content: space-evenly; 
+  justify-items: center; 
+  align-items: center; 
+  width: auto;
+  margin: auto; 
+  /* height: 40%;  */
+}

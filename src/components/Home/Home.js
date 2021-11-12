@@ -1,20 +1,14 @@
-
+import './Home.css'
 export function Home() {
 
   return (
     <>
-    <p>Welcome to Space shooter</p>
-    <div className="homeinfo"> 
-    </div>
-    <div className="leaderboardPL">
-      <h2>Yes</h2>
-    </div>
-    <div className="leaderboardGD">
-      <h2>No</h2>
-    </div>
-    <div className="eventcalendar">
-
-    </div>
+      <h1 className="title">Welcome to Space shooter</h1>
+      <div className="grid-container">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas esse quia! Placeat distinctio nostrum sequi totam obcaecati culpa odit aut, quidem rerum, eveniet reiciendis laboriosam velit iste nisi quam?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas esse quia! Placeat distinctio nostrum sequi totam obcaecati culpa odit aut, quidem rerum, eveniet reiciendis laboriosam velit iste nisi quam?</p>
+        <p className="ptest" >Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quas esse quia! Placeat distinctio nostrum sequi totam obcaecati culpa odit aut, quidem rerum, eveniet reiciendis laboriosam velit iste nisi quam?</p>
+      </div>
     </>
   );
 }

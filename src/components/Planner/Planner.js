@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { GunCard } from '../Gun/GunCard';
+import './Planner.css';
 
 export function Planner() {
   const [guns, setGuns] = useState(null);
@@ -20,7 +21,7 @@ export function Planner() {
   },[guns])
 
   return(
-    <>
+    <div className="cardlist">
       {Array.isArray(guns) &&
         guns.map((gun) => (
           <GunCard
@@ -28,8 +29,9 @@ export function Planner() {
             gunId={gun.id}
             gunName={gun.name}
             gunIMG={gun.image}
+            gunType={gun.type}
           />
         ))}
-    </>
+    </div>
   )
 }
