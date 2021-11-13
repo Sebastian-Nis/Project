@@ -77,7 +77,7 @@
       "name":"P320",
       "type":"pistol",
       "caliber":"9mm",
-      "image":"/Images/Pistol/P320.jpg",
+      "image":"https://i.ibb.co/rktjKML/P320.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -85,7 +85,7 @@
       "name":"B92",
       "type":"pistol",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/txggWqR/B92.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -93,7 +93,7 @@
       "name":"Browning Hi-Power",
       "type":"pistol",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/0BH1FtV/Browning-Hi-Power.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -101,7 +101,7 @@
       "name":"Five-seven",
       "type":"pistol",
       "caliber":"FN 5.7mm",
-      "image":"",
+      "image":"https://i.ibb.co/jDwKmtz/Five-seven.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -109,7 +109,7 @@
       "name":"Glock 19",
       "type":"pistol",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/BNx85zy/Glock-19.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -117,7 +117,7 @@
       "name":"Ruger MK.III",
       "type":"pistol",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/LpVfpnV/Ruger-MK-III.png",
       "firerate":"semi-auto"
     },
     {
@@ -125,7 +125,7 @@
       "name":"M1911 Colt",
       "type":"pistol",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/rvYvhNk/M1911-Colt.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -133,7 +133,7 @@
       "name":"Barracuda",
       "type":"revolver",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/XtXMF08/Barracuda.jpg",
       "firerate":"double-action"
     },
     {
@@ -141,7 +141,7 @@
       "name":"Korth Combat",
       "type":"revolver",
       "caliber":".357 Magnum",
-      "image":"",
+      "image":"https://i.ibb.co/6gT96RC/Korth-Combat.jpg",
       "firerate":"double-action"
     },
     {
@@ -149,7 +149,7 @@
       "name":"BFR Magnum",
       "type":"revolver",
       "caliber":".500 Magnum",
-      "image":"",
+      "image":"https://i.ibb.co/6Bq12QP/BFR-Magnum.jpg",
       "firerate":"single-action "
     },
     {
@@ -157,7 +157,7 @@
       "name":"Colt Anaconda",
       "type":"revolver",
       "caliber":".44 Magnum",
-      "image":"",
+      "image":"https://i.ibb.co/r04FZT1/Colt-Anaconda.jpg",
       "firerate":"double-action"
     },
     {
@@ -165,7 +165,7 @@
       "name":"Colt Detective Special",
       "type":"revolver",
       "caliber":".38 Special",
-      "image":"",
+      "image":"https://i.ibb.co/yhQztFy/Colt-Detective-Special.jpg",
       "firerate":"double-action"
     },
     {
@@ -173,7 +173,7 @@
       "name":"S&W Mod625",
       "type":"revolver",
       "caliber":".45 ACP",
-      "image":"",
+      "image":"https://i.ibb.co/7QhG4NR/S-W-Mod625.jpg",
       "firerate":"double-action"
     },
     {
@@ -181,7 +181,7 @@
       "name":"M4 Super 90",
       "type":"shotgun",
       "caliber":"12-gauge",
-      "image":"",
+      "image":"https://i.ibb.co/whC8FDK/M4-Super-90.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -189,7 +189,7 @@
       "name":"RS-200",
       "type":"shotgun",
       "caliber":"12-gauge",
-      "image":"",
+      "image":"https://i.ibb.co/KFm4HQb/RS-200.jpg",
       "firerate":"pump-action"
     },
     {
@@ -197,7 +197,7 @@
       "name":"Saiga 12",
       "type":"shotgun",
       "caliber":"12-gauge",
-      "image":"",
+      "image":"https://i.ibb.co/QNDRHCN/Saiga-12.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -205,7 +205,7 @@
       "name":"Supernova",
       "type":"shotgun",
       "caliber":"12-gauge",
-      "image":"",
+      "image":"https://i.ibb.co/xgNHM6Y/Supernova.jpg",
       "firerate":"pump-action"
     },
     {
@@ -213,7 +213,7 @@
       "name":"SPAS12",
       "type":"shotgun",
       "caliber":"12-gauge",
-      "image":"",
+      "image":"https://i.ibb.co/JBnzfRW/SPAS12.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -221,7 +221,7 @@
       "name":"AK-102",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/r0L7y8K/AK-102.jpg",
       "firerate":"automatic"
     },
     {
@@ -229,7 +229,7 @@
       "name":"AAC Honey Badger",
       "type":"assault rifle",
       "caliber":".300 Blackout",
-      "image":"https://i.imgur.com/GGylcRL.jpg",
+      "image":"https://i.ibb.co/GcVsPtD/AAC-Honey-Badger.jpg",
       "firerate":"automatic"
     },
     {
@@ -237,7 +237,7 @@
       "name":"AK-74",
       "type":"assault rifle",
       "caliber":"7.62x39mm",
-      "image":"https://i.imgur.com/8FCBcN7.jpg",
+      "image":"https://i.ibb.co/zFf0b6r/Ak-74.jpg",
       "firerate":"automatic"
     },
     {
@@ -245,7 +245,7 @@
       "name":"AK-103",
       "type":"assault rifle",
       "caliber":"7.62x39mm",
-      "image":"",
+      "image":"https://i.ibb.co/pRrz0Rj/AK-103.jpg",
       "firerate":"automatic"
     },
     {
@@ -253,7 +253,7 @@
       "name":"AS VAL",
       "type":"assault rifle",
       "caliber":"9x39mm",
-      "image":"https://i.imgur.com/JUELSjt.jpg",
+      "image":"https://i.ibb.co/N3QW0QC/AS-VAL.jpg",
       "firerate":"automatic"
     },
     {
@@ -261,7 +261,7 @@
       "name":"M17S",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/DYFdgpB/M17S.jpg",
       "firerate":"automatic"
     },
     {
@@ -269,7 +269,7 @@
       "name":"Mk47",
       "type":"assault rifle",
       "caliber":"7.62x39mm",
-      "image":"",
+      "image":"https://i.ibb.co/VHL1dpC/Mk47.jpg",
       "firerate":"automatic"
     },
     {
@@ -277,7 +277,7 @@
       "name":"M4A1",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/NFQQV0c/M4A1.jpg",
       "firerate":"automatic"
     },
     {
@@ -285,7 +285,7 @@
       "name":"FAMAS",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"https://i.imgur.com/c9nNOdK.jpg",
+      "image":"https://i.ibb.co/YfFn0qY/FAMAS.jpg",
       "firerate":"automatic"
     },
     {
@@ -293,7 +293,7 @@
       "name":"SCAR-L",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/mDz2MrD/SCAR-L.jpg",
       "firerate":"automatic"
     },
     {
@@ -301,7 +301,7 @@
       "name":"Galil",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"https://i.imgur.com/3D1Trgv.jpg",
+      "image":"https://i.ibb.co/zXQmSfK/Galil.jpg",
       "firerate":"automatic"
     },
     {
@@ -309,7 +309,7 @@
       "name":"HK416",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/wW76Z5j/HK416.jpg",
       "firerate":"automatic"
     },
     {
@@ -317,7 +317,7 @@
       "name":"HKG36",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"https://i.imgur.com/enI3YYg.jpg",
+      "image":"https://i.ibb.co/2v4yY8B/HKG36.jpg",
       "firerate":"automatic"
     },
     {
@@ -325,7 +325,7 @@
       "name":"M16A4",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"https://i.imgur.com/lvZKu2c.jpg",
+      "image":"https://i.ibb.co/16tHZRD/M16A4.jpg",
       "firerate":"automatic"
     },
     {
@@ -333,7 +333,7 @@
       "name":"MDR",
       "type":"assault rifle",
       "caliber":"7.62x51mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/F30kW0M/MDR.jpg",
       "firerate":"automatic"
     },
     {
@@ -341,7 +341,7 @@
       "name":"Ruger 10 22",
       "type":"sporting rifle",
       "caliber":".22 LR",
-      "image":"",
+      "image":"https://i.ibb.co/mBHb3q4/Ruger-10-22.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -349,7 +349,7 @@
       "name":"AUG",
       "type":"assault rifle",
       "caliber":"5.56x45mm NATO",
-      "image":"https://i.imgur.com/XuenaaK.jpg",
+      "image":"https://i.ibb.co/RyLTSK8/AUG.jpg",
       "firerate":"automatic"
     },
     {
@@ -357,7 +357,7 @@
       "name":"G22",
       "type":"rifle",
       "caliber":".22 LR",
-      "image":"https://i.imgur.com/s29VQhF.jpg",
+      "image":"https://i.ibb.co/Ntzfzpk/G22.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -365,7 +365,7 @@
       "name":"WA2000",
       "type":"sniper rifle",
       "caliber":".308 Winchester",
-      "image":"",
+      "image":"https://i.ibb.co/SRpbwyr/WA2000.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -373,7 +373,7 @@
       "name":"AWM",
       "type":"sniper rifle",
       "caliber":".338 Lapua Magnum",
-      "image":"",
+      "image":"https://i.ibb.co/8N9KTJx/AWM.jpg",
       "firerate":"bolt action"
     },
     {
@@ -381,7 +381,7 @@
       "name":"M82",
       "type":"sniper rifle",
       "caliber":".50 BMG",
-      "image":"",
+      "image":"https://i.ibb.co/0cyzxDM/M82.jpg",
       "firerate":"bolt action"
     },
     {
@@ -389,7 +389,7 @@
       "name":"Mosin Nagant",
       "type":"sniper rifle",
       "caliber":"7.62×54mmR",
-      "image":"",
+      "image":"https://i.ibb.co/r3VvwBv/Mosin-Nagant.jpg",
       "firerate":"bolt action"
     },
     {
@@ -397,7 +397,7 @@
       "name":"Remington 700",
       "type":"sniper rifle",
       "caliber":".308 Winchester",
-      "image":"",
+      "image":"https://i.ibb.co/4tBQVYz/Remington-700.jpg",
       "firerate":"bolt action"
     },
     {
@@ -405,7 +405,7 @@
       "name":"SR-25",
       "type":"sniper rifle",
       "caliber":"7.62x51mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/F0zpLgt/SR-25.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -413,7 +413,7 @@
       "name":"SSG 69",
       "type":"sniper rifle",
       "caliber":"7.62x51mm NATO",
-      "image":"",
+      "image":"https://i.ibb.co/XxJGDMp/SSG-69.jpg",
       "firerate":"bolt action"
     },
     {
@@ -421,7 +421,7 @@
       "name":"SVD Dragunov",
       "type":"sniper rifle",
       "caliber":"7.62x54mm R",
-      "image":"",
+      "image":"https://i.ibb.co/4gWsyRs/SVD-Dragunov.jpg",
       "firerate":"semi-auto"
     },
     {
@@ -429,7 +429,7 @@
       "name":"VSS",
       "type":"sniper rifle",
       "caliber":"9x39mm",
-      "image":"",
+      "image":"https://i.ibb.co/LkBwBYM/VSS.jpg",
       "firerate":"automatic"
     },
     {
@@ -437,7 +437,7 @@
       "name":"MP7A1",
       "type":"submachine gun",
       "caliber":"4.6×30mm",
-      "image":"",
+      "image":"https://i.ibb.co/Z1Xny6J/MP7A1.jpg",
       "firerate":"automatic"
     },
     {
@@ -445,7 +445,7 @@
       "name":"MAC10",
       "type":"submachine gun",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/LnrJwHr/MAC10.jpg",
       "firerate":"automatic"
     },
     {
@@ -453,7 +453,7 @@
       "name":"MP5",
       "type":"submachine gun",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/z8YSpZV/MP5.jpg",
       "firerate":"automatic"
     },
     {
@@ -461,7 +461,7 @@
       "name":"MPX",
       "type":"submachine gun",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/XbL6rPr/MPX.jpg",
       "firerate":"automatic"
     },
     {
@@ -469,7 +469,7 @@
       "name":"UMP",
       "type":"submachine gun",
       "caliber":".45 ACP",
-      "image":"",
+      "image":"https://i.ibb.co/zPHnskv/UMP.jpg",
       "firerate":"automatic"
     },
     {
@@ -477,7 +477,7 @@
       "name":"Uzi",
       "type":"submachine gun",
       "caliber":"9mm",
-      "image":"",
+      "image":"https://i.ibb.co/qk78nyq/Uzi.jpg",
       "firerate":"automatic"
     },
     {
@@ -485,7 +485,7 @@
       "name":"Vector",
       "type":"submachine gun",
       "caliber":".45 ACP",
-      "image":"",
+      "image":"https://i.ibb.co/bKpwwjj/Vector.jpg",
       "firerate":"automatic"
     }
   ],

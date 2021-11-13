@@ -176,7 +176,7 @@ export function Auth() {
                 type="numeric"
                 id="delcharcode"
                 name="delcharcode"
-                maxlength="6"
+                maxLength="6"
                 value={values.delcharcode}
                 onChange={handleChange}
                 className={clsx('form-control', { 'is-invalid': errors.delcharcode })}
