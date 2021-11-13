@@ -8,7 +8,7 @@ export function Profile() {
   useEffect(() => {
     console.log("here")
     console.log(auth?.user.id)
-    fetch(`http://localhost:3001/users_details?userId=${auth?.user.id}`, {
+    fetch(`http://localhost:3001/usersDetails?userId=${auth?.user.id}`, {
       headers: {
         Authorization: `Bearer ${auth?.accessToken}`,
       },

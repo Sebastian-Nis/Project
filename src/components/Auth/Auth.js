@@ -5,20 +5,17 @@ import { useAuth } from './Auth.context';
 
 export function Auth() {
   const [values, setValues] = useState({
-    first:'',
-    last:'',
     email: '',
     password: '',
     type:'user',
     'retype-password': '',
-    delcharcode:'',
+    nickname: '',
   });
 
   const [errors, setErrors] = useState({
     email: '',
     password: '',
     'retype-password': '',
-    delcharcode:'',
   });
 
   const [apiError, setApiError] = useState('');
@@ -55,6 +52,7 @@ export function Auth() {
     e.preventDefault();
 
     if (!isFormValid()) {
+      console.log("nope")
       return;
     }
 
@@ -69,11 +67,30 @@ export function Auth() {
         body: JSON.stringify({
           email: values.email,
           password: values.password,
-          delcharcode:values.delcharcode,
           type:values.type
         }),
       }
     ).then((res) => res.json());
+    
+    // if(!isLogin){
+    //   const userdet = await fetch(
+    //     `http://localhost:3001/usersDetails`,
+    //     {
+    //       method: 'POST',
+    //       headers: {
+    //         'Content-Type': 'application/json',
+    //         'Accept': 'application/json'
+    //       },
+    //       body: JSON.stringify({
+    //         userId: data.user.id,
+    //         nickname: values.nickname,
+    //         level: 0,
+    //         location: 'starting planet',
+    //         guns:[],
+    //       }),
+    //     }
+    //   ).then((res) => res.json());     
+    // }
 
     if (data.accessToken) {
       login(data);
@@ -86,8 +103,10 @@ export function Auth() {
     } else {
       setApiError(data);
     }
+    
   }
 
+  
   function isFormValid() {
     let isValid = true;
     let newErrors = { ...errors };
@@ -101,10 +120,6 @@ export function Auth() {
       isValid = false;
       newErrors.password = 'Please choose a password';
     
-    }
-    if (!values.delcharcode) {
-      isValid = false;
-      newErrors.delcharcode = 'Code can only contain numbers';
     }
 
     if (!isLogin && values.password !== values['retype-password']) {
@@ -167,25 +182,6 @@ export function Auth() {
               })}
             />
             <div className="invalid-feedback">{errors['retype-password']}</div>
-
-            <div>
-              <label htmlFor="delcharcode">
-                Set your delete code: 
-              </label>
-              <input
-                type="numeric"
-                id="delcharcode"
-                name="delcharcode"
-                maxLength="6"
-                value={values.delcharcode}
-                onChange={handleChange}
-                className={clsx('form-control', { 'is-invalid': errors.delcharcode })}
-              />
-              <p className="security-warning">
-                Please do not share this code with anyone you don't trust, our employees will never ask you for such info.
-              </p>
-              <div className="invalid-feedback">{errors['delcharcode']}</div>
-            </div>
 
             <div>
               <label htmlFor="country">
