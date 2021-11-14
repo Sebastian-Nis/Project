@@ -21,6 +21,13 @@ export function DamageChart() {
     return self.indexOf(value) === index;
   }
 
+  function pen (c){
+    if (c === '7')
+    return 1
+    else
+    return 0
+  }
+
   useEffect(() => {
     fetch(`http://localhost:3001/ammo`, {
       headers: {
@@ -33,28 +40,27 @@ export function DamageChart() {
     },[])
     return (
       <div>
-        {Array.isArray(calibers) &&
-          calibers.map(caliber =>
           <table>
-            <th>{caliber}</th>
-            <tr>Name</tr>
-            <tr>Penetration</tr>
-            <tr>Fragmentation</tr>
-            <tr>Velocity</tr>
+            <th>Caliber Type</th>
+            <th>Name</th>
+            <th>Penetration</th>
+            <th>Fragmentation</th>
+            <th>Velocity</th>
+            <th>Total Damage</th>
             {Array.isArray(ammo) &&
-              ammo.map((ammo) => (
-                <>
-                <td>{ammo.name}</td> 
-                <td>{ammo.caliber}</td> 
-                <td>{ammo.pen_class}</td> 
-                <td>{ammo.frag}</td>
-                <td>{ammo.speed}</td>
-                </>
+              ammo.map((amm) => (
+                <tr>
+                <td>{amm.caliber}</td> 
+                <td>{amm.name}</td> 
+                <td>{amm.pen_class}</td> 
+                <td>{amm.frag}</td>
+                <td>{amm.speed}</td>
+                <td>{(amm.speed *0.5 + amm.frag*0.3) * (pen(amm.pen_class))}</td>
+                </tr>
                 )
               )
               }
           </table>
-          )}
       </div>
     );
 
