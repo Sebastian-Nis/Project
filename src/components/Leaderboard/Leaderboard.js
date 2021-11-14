@@ -62,40 +62,40 @@ export function Leaderboard() {
     
     
     return(
-        <>
-            <div>
-                <table>
-                <thead>
-                    <tr>
-                        <th>
-                            <button type="button" onClick={() => requestSort('nickname')} className={getClassNamesFor('nickname')}>
-                                Character Name
-                            </button>
-                        </th>
-                        <th>
-                            <button type="button" onClick={() => requestSort('level')} className={getClassNamesFor('level')}>
-                                Level
-                            </button>
-                        </th>
-                        <th>
-                            <button type="button" onClick={() => requestSort('location')} className={getClassNamesFor('location')}>
-                                Location
-                            </button>
-                        </th>
-                    </tr>
-                </thead>
-                    <tbody>
-                    {Array.isArray(items) &&
-                    items.map((user) => (
-                        <tr key={user.id}>
-                            <td>{user.nickname}</td> 
-                            <td>{user.level}</td> 
-                            <td>{user.location}</td>
-                        </tr>
-                    ))} 
-                    </tbody>
-                </table>
-            </div>
-        </>
-      )
+      <>
+        <div>
+          <table>
+            <thead>
+              <tr>
+                <th>
+                  <button type="button" onClick={() => requestSort('nickname')} className={getClassNamesFor('nickname')}>
+                    Character Name
+                  </button>
+                </th>
+                <th>
+                  <button type="button" onClick={() => requestSort('level')} className={getClassNamesFor('level')}>
+                    Level
+                  </button>
+                </th>
+                <th>
+                  <button type="button" onClick={() => requestSort('location')} className={getClassNamesFor('location')}>
+                      Location
+                  </button>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+            {Array.isArray(items) &&
+            items.map((user) => (
+              <tr key={user.id}>
+                <td>{user.nickname}</td> 
+                <td>{user.level}</td> 
+                <td>{user.location}</td>
+              </tr>
+            ))} 
+            </tbody>
+          </table>
+        </div>
+      </>
+    ) 
 }

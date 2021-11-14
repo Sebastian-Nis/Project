@@ -48,6 +48,9 @@ export function Nav() {
         <Link to="/planner" >
           Character builder
         </Link>
+        <Link to="/damagechart" >
+          Damage chart
+        </Link>
         <Link  to="/leaderboard" >
           Leaderboard
         </Link>

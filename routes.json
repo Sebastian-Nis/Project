@@ -1,5 +1,6 @@
 {
     "users": "600/users$1",
     "guns":"444/guns$1",
+    "ammo":"644/ammo$1",
     "usersDetails": "644/userDetails$1"
 }
