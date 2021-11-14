@@ -13,7 +13,6 @@ export function Planner() {
   function extractFilters(data){
     let gunTypes = []
     let gunCalibers = []
-    let result = {}
     // console.log("res")
     console.log(data)
     
@@ -43,11 +42,11 @@ export function Planner() {
   }
 
   function changeCaliber(e) {
-    let {name, value} = e.target
+    let value = e.target.value
     setCaliber(value)
   }
   function changeType(e) {
-    let {name, value} = e.target
+    let value = e.target.value
     setType(value)
   }
 

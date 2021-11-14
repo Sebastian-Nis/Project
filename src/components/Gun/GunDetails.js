@@ -32,7 +32,6 @@ export function GunDetails() {
     return (
     <>
        <div>
-        <p>{id}</p>
           <img src={gun?.image} alt="Gun no img"></img>
           <p>{gun?.name}</p>
           <p>{gun?.type}</p>
