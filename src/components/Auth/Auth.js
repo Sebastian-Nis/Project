@@ -95,6 +95,8 @@ export function Auth() {
     if (data.accessToken) {
       login(data);
       let to = '/';
+      if (!isLogin)
+        to = '/registerDetails';
       if (location.state?.from) {
         to = location.state.from.pathname + location.state.from.search;
       }
