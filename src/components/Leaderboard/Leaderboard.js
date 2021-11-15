@@ -50,7 +50,7 @@ export function Leaderboard() {
   };
 
     useEffect(() => {
-      fetch(`http://localhost:3001/usersDetails`, {
+      fetch(`http://localhost:3001/userDetails`, {
         headers: {
           'Content-type': 'application/json'
         },

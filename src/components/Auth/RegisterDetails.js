@@ -1,164 +1,97 @@
-import { useEffect, useState } from 'react';
-import { useAuth } from '../Auth/Auth.context';
+import { useState } from 'react';
+import { useAuth } from './Auth.context';
 import clsx from 'clsx';
-import {NotificationContainer, NotificationManager} from 'react-notifications';
-import Modal from 'react-modal';
+import { useHistory, useLocation } from 'react-router-dom';
+import './RegisterDetails.css'
 
-const customStyles = {
-  content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-  },
-};
-
-export function Profile() {
-  const [users_details, setUsers_details] = useState(null);
-  const { auth, logout } = useAuth();
-  const [errors, setErrors] = useState({
-    nickname: '',
-    firstname: '',
-    lastname:'',
-    country:''
-});
-let subtitle;
-  const [modalIsOpen, setIsOpen] = useState(false);
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
-  function afterOpenModal() {
-    // references are now sync'd and can be accessed.
-    subtitle.style.color = '#f00';
-  }
-
-  function closeModal() {
-    setIsOpen(false);
-  }
-  useEffect(() => {
-    console.log("here")
-    console.log(auth?.user.id)
-    fetch(`http://localhost:3001/userDetails?userId=${auth?.user.id}`, {
-      headers: {
-        Authorization: `Bearer ${auth?.accessToken}`,
-      },
-    })
-      .then((res) => {
-        if (!res.ok) {
-          if (res.status === 401) {
-            logout();
-            throw new Error('Token expired!');
-          }
-          throw new Error(
-            'Fetching data failed with status code: ',
-            res.status
-          );
-        }
-
-        return res.json();
-      })
-      .then((data) => {setUsers_details(data[0])});
-      
-  }, [auth, logout]);
-  function handleChange(e) {
-    const newValues = { ...users_details };
-    newValues[e.target.name] = e.target.value;
-    const newErrors = { ...errors };
-    newErrors[e.target.name] = '';
-
-    setUsers_details(newValues);
-    setErrors(newErrors);
-    // setApiError('');
-  }
-  async function handleDelete(){
-    fetch(`http://localhost:3001/userDetails/${users_details.id}`, {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${auth?.accessToken}`
-        },
-      }).then(res =>{
-      fetch(`http://localhost:3001/users/${auth?.user.id}`, {
-        method: 'DELETE',
-        headers: {
-            'Content-Type': 'application/json',
-            Authorization: `Bearer ${auth?.accessToken}`
-        }
-        
-      }).then((res) => {
-        logout()
-      })
-    })
-  }
-  async function handleSubmit(e){
-    e.preventDefault();
-    console.log(users_details);
-
-    fetch(`http://localhost:3001/userDetails/${users_details.id}`, {
-        method: 'PATCH',
-        headers: {
-            'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-            nickname: users_details.nickname,
-            firstname: users_details.firstname,
-            lastname:users_details.lastname,
-            country:users_details.country,
-            mainGun:users_details.mainGun,
-            sideGun:users_details.sideGun
-        })
+export function RegisterDetails(){
+    const { auth, login } = useAuth();
+    const history = useHistory();
+    const [values, setValues] = useState({
+        nickname: '',
+        firstname: '',
+        lastname:'',
+        country:''
+    });
+    const [errors, setErrors] = useState({
+        nickname: '',
+        firstname: '',
+        lastname:'',
+        country:''
+    });
+    async function handleSubmit(e){
+        e.preventDefault();
+        console.log(values);
     
-      })
-      .then((res) => {
-        if (res.ok){
-          NotificationManager.success('Account info updated ', 'SUCCESS');
-          return res.json();
-        }else{
-          throw new Error(res.status)
-        }
-       
-      })
-      .catch((error) => {
-        NotificationManager.error('API call failed with status code:"'+error+'" !', 'ERROR', 5000);
-      });
-}
-
-  useEffect(() => {
-    console.log(users_details)
-}, [users_details]);
-
-    return (
-      <>
-        <p>My profile</p>
-        <div className="userprofile">
+        fetch(`http://localhost:3001/userDetails`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                nickname: values.nickname,
+                firstname: values.firstname,
+                lastname:values.lastname,
+                country:values.country,
+                userId:auth?.user.id,
+                location:"Starting Country",
+                level:1,
+                currency:500,
+                guns:[],
+                mainGun:"",
+                sideGun:""
+            })
+          })
+          .then(
+              res => {
+                  history.push("/")
+              }
+          )
+    }
+    function handleChange(e) {
+        const newValues = { ...values };
+        newValues[e.target.name] = e.target.value;
+        const newErrors = { ...errors };
+        newErrors[e.target.name] = '';
+    
+        setValues(newValues);
+        setErrors(newErrors);
+        // setApiError('');
+      }
+    
+    return(
         <form className="registerdetails" onSubmit={handleSubmit}>
-          <p>User Type: {auth?.user.type}</p>
-          
-          <label htmlFor="firstname" className="form-label">First name: </label>
-          <input type="text" pattern="[^()/><\][\\\x22,;|]+"
-            id="firstname"
-            name="firstname"
-            value={users_details?.firstname}
-            onChange={handleChange}
-            className={clsx('form-control', { 'is-invalid': errors.email })}>
+            <label htmlFor="nickname" className="form-label">Enter your characters name: </label>
+            <input type="text" pattern="[^()/><\][\\\x22,;|]+"
+                id="nickname"
+                name="nickname"
+                value={values.name}
+                onChange={handleChange}
+                className={clsx('form-control', { 'is-invalid': errors.email })}>
+            </input>
+            
+            <label htmlFor="firstname" className="form-label">Enter your first name: </label>
+            <input type="text" pattern="[^()/><\][\\\x22,;|]+"
+             id="firstname"
+             name="firstname"
+             value={values.name}
+             onChange={handleChange}
+             className={clsx('form-control', { 'is-invalid': errors.email })}>
+             </input>
+
+            <label htmlFor="lastname" className="form-label">Enter your last name: </label>
+            <input  type="text" pattern="[^()/><\][\\\x22,;|]+"
+                id="lastname"
+                name="lastname"
+                value={values.name}
+                onChange={handleChange}
+                className={clsx('form-control', { 'is-invalid': errors.email })}>
             </input>
 
-          <label htmlFor="lastname" className="form-label">Last name: </label>
-          <input  type="text" pattern="[^()/><\][\\\x22,;|]+"
-              id="lastname"
-              name="lastname"
-              value={users_details?.lastname}
-              onChange={handleChange}
-              className={clsx('form-control', { 'is-invalid': errors.email })}>
-          </input>
-          <label htmlFor="country" className="form-label">
-              Please select your country
-          </label>
-          <select id="country" name="country" value={users_details?.country} onChange={handleChange}>
+            <label htmlFor="country" className="form-label">
+                Please select your country
+            </label>
+            <select id="country" name="country" value={values.country} onChange={handleChange}>
             <option value="Afganistan">Afghanistan</option>
             <option value="Albania">Albania</option>
             <option value="Algeria">Algeria</option>
@@ -405,64 +338,10 @@ let subtitle;
             <option value="Zaire">Zaire</option>
             <option value="Zambia">Zambia</option>
             <option value="Zimbabwe">Zimbabwe</option>
-          </select>
-          <br/>
-          <label htmlFor="nickname" className="form-label">Characters name: </label>
-          <input type="text" pattern="[^()/><\][\\\x22,;|]+"
-                id="nickname"
-                name="nickname"
-                value={users_details?.nickname}
-                onChange={handleChange}
-                className={clsx('form-control', { 'is-invalid': errors.email })}>
-          </input>
-          <p>Level:{users_details?.level} </p>
-          <p>Location: {users_details?.location}</p>
-          <p>Cuurency : {users_details?.currency}</p>
-          <p>Owned Guns: {users_details?.guns.join(', ')} </p>
-          <label htmlFor="mainGun" className="form-label">Main gun </label>
-          <select id="mainGun" name="mainGun" value={users_details?.mainGun} onChange={handleChange}>
-            {Array.isArray(users_details?.guns) &&
-              users_details?.guns.map(gun => { 
-                return(
-                  <option key={gun} value={gun}>{gun}</option>
-                )
-              })
-            }
-          </select>
-          <label htmlFor="sideGun" className="form-label">Side gun </label>
-          <select id="sideGun" name="sideGun" value={users_details?.sideGun} onChange={handleChange}>
-            {Array.isArray(users_details?.guns) &&
-              users_details?.guns.map(gun => { 
-                return(
-                  <option key={gun} value={gun}>{gun}</option>
-                )
-              })
-            }
-          </select>
-          <br/>
-          <button type="submit" className="btn btn-primary">
-                Update
-          </button>
+            </select>
+            <button type="submit" className="btn btn-primary">
+                Submit
+            </button>
         </form>
-        <br/>
-        <p>This action is irreversible/</p>
-        <button className="deletebutton" onClick={openModal}>
-            Delete your account
-        </button>
-        <Modal
-        isOpen={modalIsOpen}
-        onAfterOpen={afterOpenModal}
-        onRequestClose={closeModal}
-        style={customStyles}
-        contentLabel="Example Modal"
-      >
-        <h2 ref={(_subtitle) => (subtitle = _subtitle)}>Are you sure you want to delete 
-        your account?</h2>
-        <button onClick={closeModal}>No</button>
-        <button onClick={handleDelete}>Yes</button>
-      </Modal>
-        </div>
-        <NotificationContainer/>
-      </>
-    );
-  }
+    )
+}

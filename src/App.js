@@ -8,6 +8,7 @@ import { DamageChart } from './components/Planner/DamageChart';
 import {GunDetails} from './components/Gun/GunDetails';
 import { AuthContextProvider } from './components/Auth/Auth.context';
 import { PrivateRoute} from './components/Auth/PrivateRoute';
+import { RegisterDetails} from './components/Auth/RegisterDetails';
 
 import './App.css';
 import { Profile } from './components/Profile/Profile';
@@ -28,6 +29,7 @@ function App() {
             <Route path="/gunDetails/:id" component={GunDetails} />
             <Route path="/login" component={Auth} />
             <Route path="/register" component={Auth} />
+            <Route path="/registerDetails" component={RegisterDetails} />
             <Route path="*" component={() => <h1>404 Page not found</h1>} />
           </Switch>
         </Router>
