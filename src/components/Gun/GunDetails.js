@@ -8,7 +8,7 @@ export function GunDetails() {
     const [gun, setGun] = useState(null);
 
     useEffect(() => {
-        fetch(`http://localhost:3001/guns?id=${id}`, {
+        fetch(`http://localhost:3001/gun?id=${id}`, {
         headers: {
             'Content-type': 'application/json',
         },
