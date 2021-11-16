@@ -1,39 +1,66 @@
-leaderboard:
-	table with sort by values
+✓ leaderboard: table with sort by values
 
+X CSS
 
-
-SEBI MUST DO:
-TOT CE ESTE PANA ACUMA SA ARATE BINE
-
-
-cerinte:
- register with more details : first name last character delete code etc
- delete and update/change user data/details
+✓ register with more details : first name last character delete code etc
+X delete and update/change user data/details
  
-!Validation profile form
-error messeges + confirmation messeges(for user)
-
-!!responsive
+½ error messeges + confirmation messeges(for user)
 
 
-shop:
+X shop:
 	add price la iteme
 	add user money
 	buy functionality
 
-show user guns
+✓ show user guns
 
-add ammo db:
+✓ add ammo db:
 	add ammo dmg
 	add ammo penetration
 	add ammo fragmentation
-	weapon fire rate
 
-implement pagination/search and filter for shop
+✓ implement pagination/search and filter for shop
 	
-ExtErNal ApI
-Different account types(normal, admin etc)
+X ExtErNal ApI
+½ Different account types(normal, admin etc)
 	
-damage calculator page:
+½ damage calculator page:
 	calculate vs heavy, light, medium, no armour
+
+
+✓ Has a login/register/logout flow (when registering you will accept email, 
+	password, first name, last name, profile picture URL or base64 (you can accept a 
+	picture in an input type file and convert it to base64 using JS) and website)
+
+✓ Has a user profile where the user can edit all the info they registered with, 
+	Xalso implement a "Delete my account link" with confirmation!
+
+✓ Has a full CRUD of a medium-complex (at least 5 inputs of various kinds 
+	(inputs, textareas, selects, let your imagination run wild) in the forms) entity of 
+your choosing:
+	✓ A list of your entities and entity details can be seen by any kind of users, 
+		even not logged in ones
+	✓ A user can edit their own entities (the form is pre-filled with entity data when editing)
+	✓ A user can delete their own entities (the user has to confirm the deletion, 
+		implement this with a modal)
+	X A logged in user can add entities
+
+½ All forms should be fully validated and error messages nicely displayed to the user
+
+½ Exceptional cases (errors returned by the server) should all be treated and an 
+	appropriate message displayed to the user.
+
+½ All actions should have appropriate success and error messages shown 
+	("You logged in successfully", "Your whatever was successfully created", "Your profile was modified successfully" etc.)
+
+½ The application should look nice, be responsive (you don't have to use standard 
+	breakpoints just make it look ok when you resize the browser to different sizes)
+
+X Integrating other external APIs like google maps, spotify, weather, 
+	star positions whatever
+½ Multiple user types with different rights (user rights management or user roles 
+	(admin, normal user or normal user, editor etc.))
+✓ Implement a search or filter
+X Implement a pagination (look at the json-server documentation to see 
+	how to paginate requests)

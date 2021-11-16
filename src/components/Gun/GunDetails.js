@@ -25,7 +25,7 @@ export function GunDetails() {
         .then((data) => {setGun(data[0])})
         .catch((error) => {
           NotificationManager.error('API call failed with status code:"'+error+'" !', 'ERROR', 5000);
-        });;
+        });
         
     },[id])
 
