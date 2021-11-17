@@ -2,12 +2,22 @@
     margin: 1rem;
 }
 .grid-contrainer{
-    overflow: auto;
+    display: flex;
+}
+.banner{
+    position: absolute;
+    top:10rem;
+    padding:1rem;
+    font-size: 1.3rem;
+    background-color: #ECEFCF;
+}
+.iamge topimg{
+    position:relative;
 }
 .image{
-    width: 100%;
+    paddin-inline: 2rem;
+    width: 100vmax;
     height: auto;
-    padding-block: 10px;
 }
 
 

@@ -29,6 +29,12 @@
       "password": "$2a$10$byHJadevXuHc6g6r0zi6W.yQ6VawydW4GBiiQR5McigJvUSHOPn1e",
       "type": "user",
       "id": 5
+    },
+    {
+      "email": "bc@a.com",
+      "password": "$2a$10$VMRnWKXCk6NeUWzxs4UOo.38tU9pwfYkRBKPBlbUDTuIQLj4S7OCu",
+      "type": "user",
+      "id": 6
     }
   ],
   "userDetails": [
@@ -75,6 +81,20 @@
         "P320",
         ""
       ]
+    },
+    {
+      "nickname": "numebla",
+      "firstname": "plpllp",
+      "lastname": "sdsdsd",
+      "country": "Australia",
+      "userId": 6,
+      "location": "Starting Country",
+      "level": 1,
+      "currency": 500,
+      "guns": [],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 5
     }
   ],
   "guns": [
