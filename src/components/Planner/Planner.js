@@ -52,22 +52,23 @@ export function Planner() {
 
   return(
     <>
-      
-      <select name="" onChange={changeType}>
+      <div className="filters">
+        <select name="" onChange={changeType}>
+          <option value="All">--All--</option>
+          {Array.isArray(types) &&
+            types.map(type =>
+              <option value={type}>{type}</option>)
+            }
+        </select>
+        <select name="" onChange={changeCaliber}>
         <option value="All">--All--</option>
-        {Array.isArray(types) &&
-          types.map(type =>
-          <option value={type}>{type}</option>)
-        }
-      </select>
-      <select name="" onChange={changeCaliber}>
-      <option value="All">--All--</option>
-        {Array.isArray(calibers) &&
-          calibers.map(caliber =>
-          <option value={caliber}>{caliber}</option>)
-        }
-      </select>
-      <input value={search} onInput={e => setSearch(e.target.value)}/>
+          {Array.isArray(calibers) &&
+            calibers.map(caliber =>
+              <option value={caliber}>{caliber}</option>)
+            }
+        </select>
+        <input value={search} onInput={e => setSearch(e.target.value)}/>
+      </div>
       <div className="cardlist">
         {Array.isArray(guns) &&
           guns.filter(function (gun) {

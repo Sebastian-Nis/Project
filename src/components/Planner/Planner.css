@@ -1,3 +1,16 @@
+.filters{
+  margin-block: 1.5rem;
+  padding: 1.4 rem;
+  display: flex;
+  justify-content: center;
+}
+.filters option, select, input{
+  text-align: center;
+  margin-inline: 1rem;
+}
+.filter select option {
+  text-align: center;
+}
 .cardlist{
   
   display: grid; 
@@ -13,4 +26,10 @@
   width: auto;
   margin: auto; 
   /* height: 40%;  */
+}
+.card{
+  background-color: ivory;
+  height: 100%;
+  width: 100%;
+  text-decoration: none;
 }

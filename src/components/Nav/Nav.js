@@ -45,13 +45,13 @@ export function Nav() {
           Guns for hire
         </Link>
         <img className="ak" src="https://images.gamebanana.com/img/ico/ModCategory/55df458b63dce.png" alt="Rifles icon"/>
-        <Link to="/planner" >
+        <Link to="/planner" className="navlink">
           Character builder
         </Link>
         <Link to="/damagechart" >
           Damage chart
         </Link>
-        <Link  to="/leaderboard" >
+        <Link  to="/leaderboard" className="navlink" >
           Leaderboard
         </Link>
           {!auth?.user && (
@@ -73,7 +73,7 @@ export function Nav() {
 
           {auth?.user && (
             <>
-                <NavLink to="/profile" >
+                <NavLink to="/profile" className="navlink" >
                   My profile
                 </NavLink>
                 <a href="/" onClick={handleLogout}>

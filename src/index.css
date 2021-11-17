@@ -6,8 +6,13 @@
     box-sizing: border-box;
 }
 body {
-  margin: 0;
+  background-image: url('https://cdn.suwalls.com/wallpapers/games/call-of-duty-modern-warfare-2-196-1920x1200.jpg');
+  background-position: center; /* Center the image */
+  /* background-size: cover; Resize the background image to cover the entire container */
+  margin: 0 auto;
   min-width: 450px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
 }

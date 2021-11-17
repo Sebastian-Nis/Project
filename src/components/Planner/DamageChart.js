@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-// import { AmmoClass } from './AmmoClass';
+import './Ammo.css'
 export function DamageChart() {
   const [ammo, setAmmo] = useState(null);
   function pen (c){
@@ -20,8 +20,9 @@ export function DamageChart() {
 
     },[])
     return (
-      <div>
-          <table>
+      <div className="container">
+        
+          <table className="containertable">
             <thead>
               <tr>
                 <th>Caliber Type</th>
