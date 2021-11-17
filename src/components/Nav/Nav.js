@@ -42,7 +42,7 @@ export function Nav() {
       <nav className="navbar">
         <img className="rifle" src="https://images.gamebanana.com/img/ico/ModCategory/m4a1.png" alt="M4A1 icon"/>
         <Link to="/" className="homebtn">
-          HomePage
+          Guns for hire
         </Link>
         <img className="ak" src="https://images.gamebanana.com/img/ico/ModCategory/55df458b63dce.png" alt="Rifles icon"/>
         <Link to="/planner" >
