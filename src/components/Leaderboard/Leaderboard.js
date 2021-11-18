@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import React from 'react';
+
 export function Leaderboard() {
     const [users, setUsers] = useState(null);
 
@@ -64,7 +65,7 @@ export function Leaderboard() {
     return(
       <>
         <div>
-          <table>
+          <table className="tabel">
             <thead>
               <tr>
                 <th>

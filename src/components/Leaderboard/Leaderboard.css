@@ -1,0 +1,22 @@
+
+.tabel{
+    justify-content: center;
+    margin:20px auto;
+    background-color: ivory;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+.tabel button{
+    background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+.tabel td, th {
+    border-bottom:1px solid black;
+    padding: 10px;
+}

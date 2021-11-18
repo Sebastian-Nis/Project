@@ -2,6 +2,7 @@ import clsx from 'clsx';
 import { useState } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import { useAuth } from './Auth.context';
+import './Auth.css'
 
 export function Auth() {
   const [values, setValues] = useState({
@@ -136,14 +137,15 @@ export function Auth() {
 
   
   return (
-    <form onSubmit={handleSubmit} noValidate={true}>
+    <div className="boxx">
+    <form className="formular" onSubmit={handleSubmit} noValidate={true}>
       <h1>{isLogin ? 'Login' : 'Register'}</h1>
       {apiError && (
         <div className="alert alert-danger" role="alert">
           {apiError}
         </div>
       )}
-      <div className="mb-3">
+      <div className="formdiv">
         <label htmlFor="email" className="form-label">
           Email address
         </label>
@@ -195,5 +197,6 @@ export function Auth() {
         </button>
       </div>
     </form>
+    </div>
   );
 }

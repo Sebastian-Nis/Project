@@ -1,100 +1,193 @@
 {
   "users": [
     {
-      "email": "a@a.com",
-      "password": "$2a$10$E1hq6juoEvlQq7Pu.rOikuLbcD/psEM8K/InxwBw2l2k8Z9izSQuS",
-      "id": 1,
-      "type": "admin"
+      "email": "john@gmail.com",
+      "password": "$2a$10$xCjxTlK.F9YblUBxeXvpjO3aIiAVCfasbIyvld9wI5GpgPHck9vpi",
+      "type": "user",
+      "id": 2
     },
     {
-      "email": "u@a.com",
-      "password": "$2a$10$XLpRSft4I0Z1b/hHj8eYZuvfvQB06YRQeyv7j9/.7P8DLJ2StnrEu",
-      "id": 2,
-      "type": "user"
+      "email": "bcd@gmail.com",
+      "password": "$2a$10$miKqYI.QrlFTBV8UcRM3kucmhg3qtWkk7216vl.rjPqhomirSpaoa",
+      "type": "user",
+      "id": 3
     },
     {
-      "email": "vip@a.com",
-      "password": "$2a$10$NDKb7G.55.fOfJnsIP2ae.0bIt6jJpuq1MtwvqYnTZHY.UrqzUiWO",
-      "id": 3,
-      "type": "vip"
-    },
-    {
-      "email": "t@a.com",
-      "password": "$2a$10$NC8OcPN1PWePUDIUob5DcuTGXP4D37k7xRbw3akgMd6BweHo2ODeK",
+      "email": "yahoo@yh.com",
+      "password": "$2a$10$6NhMm5o3lJ56iHWK4DkDgOYGJ0eHXLJP78o6hFe5K.qdIli4/ZYRC",
       "type": "user",
       "id": 4
     },
     {
-      "email": "nm@a.com",
-      "password": "$2a$10$byHJadevXuHc6g6r0zi6W.yQ6VawydW4GBiiQR5McigJvUSHOPn1e",
+      "email": "jpeg@gmail.com",
+      "password": "$2a$10$tJqcrH3/VX2XMAYjBUpysO6/nG9/xX4yyqKZyxo31fzXRnqwgVDae",
       "type": "user",
       "id": 5
     },
     {
-      "email": "bc@a.com",
-      "password": "$2a$10$VMRnWKXCk6NeUWzxs4UOo.38tU9pwfYkRBKPBlbUDTuIQLj4S7OCu",
+      "email": "perry@yahoo.com",
+      "password": "$2a$10$zxFQXffWxkSPZOjRslXMS.59j4ouNMjYd6GDG0pSTXHIjJomHc45G",
       "type": "user",
       "id": 6
+    },
+    {
+      "email": "sun@genericemail.net",
+      "password": "$2a$10$4z4YBazfpa76VyVJRVKWXeUj91UQWThZuhjm8JkgmgrOXvuU6pE1O",
+      "type": "user",
+      "id": 7
+    },
+    {
+      "email": "fhfhfh@zheng.ch",
+      "password": "$2a$10$m.Ptp6uByALAbFKmoRG9Nei2LZGUayaHedVTLMhNHMtvDTIR1OIJu",
+      "type": "user",
+      "id": 8
+    },
+    {
+      "email": "admin@gmail.com",
+      "password": "$2a$10$Ph7HD50F2wU33UIzSPxNxOV0pEphgsUp1UzCZPyPBZW3hlSMoxhYS",
+      "type": "user",
+      "id": 9
     }
   ],
   "userDetails": [
     {
-      "id": 1,
-      "userId": 1,
-      "nickname": "Buzz",
-      "level": 23,
-      "location": "planet c",
-      "guns": [
-        "P320",
-        "Ruger MK.III"
-      ]
-    },
-    {
-      "id": 2,
+      "nickname": "freefire",
+      "firstname": "Philip",
+      "lastname": "Lamb",
+      "country": "Great Britain",
       "userId": 2,
-      "nickname": "perry",
-      "level": 52,
-      "location": "planet d",
-      "guns": [
-        "P320",
-        ""
-      ]
+      "location": "Starting Barracks",
+      "level": 4,
+      "currency": 980,
+      "guns": [],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 2
     },
     {
-      "id": 3,
+      "nickname": "redalpha",
+      "firstname": "George",
+      "lastname": "McDonalds",
+      "country": "United States of America",
       "userId": 3,
-      "nickname": "Vip nick",
-      "level": 52,
-      "location": "planet b",
-      "guns": [
-        "P320",
-        ""
-      ]
+      "location": "Museum Basement",
+      "level": 34,
+      "currency": 23304,
+      "guns": [],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 3
     },
     {
-      "id": 4,
+      "nickname": "HeadshottsTV",
+      "firstname": "Ricky",
+      "lastname": "Gretz",
+      "country": "United States of America",
       "userId": 4,
-      "nickname": "lucavaccin",
-      "level": 52,
-      "location": "planet a",
+      "location": "Private Cottage",
+      "level": 71,
+      "currency": 180000,
       "guns": [
-        "P320",
-        ""
-      ]
+        "S&W Mod625",
+        "Barracuda",
+        "Korth Combat",
+        "Colt Detective Special",
+        "Browning Hi-Power"
+      ],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 4
     },
     {
-      "nickname": "numebla",
-      "firstname": "plpllp",
-      "lastname": "sdsdsd",
-      "country": "Australia",
+      "nickname": "Mistiy",
+      "firstname": "Karen",
+      "lastname": "Witte",
+      "country": "France",
+      "userId": 5,
+      "location": "Greenville Fortress",
+      "level": 44,
+      "currency": 19000,
+      "guns": [
+        "Browning Hi-Power",
+        "AAC Honey Badger",
+        "M17S"
+      ],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 5
+    },
+    {
+      "nickname": "noobhunter32",
+      "firstname": "secret",
+      "lastname": "unnnanymous",
+      "country": "China",
       "userId": 6,
+      "location": "Starting Barracks",
+      "level": 11,
+      "currency": 0,
+      "guns": [],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 6
+    },
+    {
+      "nickname": "Николай",
+      "firstname": "Mikhail",
+      "lastname": "Brebvg",
+      "country": "Russia",
+      "userId": 7,
+      "location": "Ruined Clockwatch Tower",
+      "level": 82,
+      "currency": 48000,
+      "guns": [
+        "Saiga 12",
+        "AK-74",
+        "AK-103",
+        "AK-102",
+        "SVD Dragunov"
+      ],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 7
+    },
+    {
+      "nickname": "朱允敏",
+      "firstname": "程庆民",
+      "lastname": "吴淑",
+      "country": "China",
+      "userId": 8,
+      "location": "Atomic Bunker #4P8",
+      "level": 99,
+      "currency": 999999,
+      "guns": [
+        "Vector",
+        "MPX",
+        "AWM",
+        "AUG",
+        "HK416",
+        "Galil",
+        "Galil",
+        "HKG36",
+        "Supernova",
+        "BFR Magnum"
+      ],
+      "mainGun": "",
+      "sideGun": "",
+      "id": 8
+    },
+    {
+      "nickname": "admin",
+      "firstname": "admin",
+      "lastname": "admin",
+      "country": "Wake Island",
+      "userId": 9,
       "location": "Starting Country",
       "level": 1,
       "currency": 500,
       "guns": [],
       "mainGun": "",
       "sideGun": "",
-      "id": 5
+      "id": 9
     }
   ],
   "guns": [
@@ -520,7 +613,7 @@
       "id": "1",
       "caliber": "9mm",
       "name": "RIP",
-      "pen_class": "0",
+      "pen_class": "1",
       "frag": "100",
       "speed": "380"
     },
@@ -616,7 +709,7 @@
       "id": "13",
       "caliber": ".38 Special",
       "name": "LdCr",
-      "pen_class": "0",
+      "pen_class": "1",
       "frag": "30",
       "speed": "300"
     },
@@ -720,7 +813,7 @@
       "id": "26",
       "caliber": "5.56x45mm NATO",
       "name": "WMGD",
-      "pen_class": "0",
+      "pen_class": "1",
       "frag": "90",
       "speed": "910"
     },

@@ -5,6 +5,15 @@
   font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
 }
+table {
+  margin: 10px auto;
+  border-radius: 5px;
+  background-color: ivory;
+  text-align: center;
+}
+table th{
+  border-bottom: 2px solid black;
+}
 body {
   background-image: url('https://cdn.suwalls.com/wallpapers/games/call-of-duty-modern-warfare-2-196-1920x1200.jpg');
   background-position: center; /* Center the image */

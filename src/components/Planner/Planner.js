@@ -67,7 +67,7 @@ export function Planner() {
               <option value={caliber}>{caliber}</option>)
             }
         </select>
-        <input value={search} onInput={e => setSearch(e.target.value)}/>
+        <input value={search} placeholder="Search..." onInput={e => setSearch(e.target.value)}/>
       </div>
       <div className="cardlist">
         {Array.isArray(guns) &&

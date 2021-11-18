@@ -1,5 +1,11 @@
 .registerdetails{
-    
+    background-color: ivory;
+
+    margin:1.2rem auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+    padding:20px;
 }
 .form-label{
     display: block;

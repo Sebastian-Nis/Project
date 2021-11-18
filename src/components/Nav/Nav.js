@@ -46,7 +46,7 @@ export function Nav() {
         </Link>
         <img className="ak" src="https://images.gamebanana.com/img/ico/ModCategory/55df458b63dce.png" alt="Rifles icon"/>
         <Link to="/planner" className="navlink">
-          Character builder
+          Gun Gallery
         </Link>
         <Link to="/damagechart" >
           Damage chart

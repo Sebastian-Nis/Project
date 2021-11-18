@@ -1,0 +1,24 @@
+
+.boxx{
+    margin:10px auto;
+    width:30%;
+}
+.boxx h1{
+    justify-content: center;
+    margin:0 auto;
+}
+.formular{
+    display: flex;
+    margin-left: 0;
+    flex-direction: column;
+    background:ivory;
+    padding:10px;
+    justify-content: center;
+}
+.formdiv{
+    margin: 0 auto;
+
+}
+.formdiv button{
+    margin: 10px;
+}

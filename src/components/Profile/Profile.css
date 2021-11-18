@@ -1,0 +1,8 @@
+.boxs{
+    padding:10px;
+    margin: 0 auto;
+    justify-content: center;
+    background-color: ivory;
+    border: 1px solid black;
+    height:100%;
+}
