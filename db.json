@@ -171,8 +171,8 @@
         "Supernova",
         "BFR Magnum"
       ],
-      "mainGun": "",
-      "sideGun": "",
+      "mainGun": "AUG",
+      "sideGun": "HKG36",
       "id": 8
     },
     {
